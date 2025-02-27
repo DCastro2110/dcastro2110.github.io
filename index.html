@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timer</title>
+  <style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .btn {
+      padding: 5px 10px;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .start {
+      background-color: rgb(8, 200, 85);
+    }
+
+    .start:disabled {
+      opacity: .5;
+    }
+
+    .stop {
+      background-color: red;
+      color: #fff;
+    }
+
+    .stop:disabled {
+      opacity: .5;
+    }
+
+    .text {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="text">Clique em iniciar para começar</h1>
+  
+    <div>
+      <button class="btn start">Iniciar</button>
+      <button class="btn stop">Parar</button>
+    </div>
+  </div>
+
+  <audio class="audio-stop">
+    <source src="audio/stop.wav" type="audio/wav">
+  </audio>
+
+  <audio class="audio-continue">
+    <source src="audio/continue.mp3" type="audio/mp3">
+  </audio>
+
+  <script src="app.js"></script>
+</body>
+</html>
