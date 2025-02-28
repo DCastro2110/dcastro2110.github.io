@@ -53,7 +53,7 @@ function mountTimer() {
       audioContinue.play();
       text.innerHTML = 'Continuar'
       mountTimer();
-    }, getRandomNumber(2000, 10000))
+    }, getRandomNumber(1000, 7000))
   }, getRandomNumber(3000, 20000))
 }
 
